@@ -1,6 +1,0 @@
-	in 
-	out VAR0
-	6 1 1 2 "0"
-LABEL LOOP
-	out VAR0
-	5 1
