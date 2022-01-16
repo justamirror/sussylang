@@ -262,5 +262,3 @@ function texttosus(text){
 	}
 	return conv
 }
-eval(sussylang.compile_file('./truthmach.sus').text)
-sussylang.console()
