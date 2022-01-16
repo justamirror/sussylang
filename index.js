@@ -87,9 +87,7 @@ module.exports = sussylang = {
 			3: (args, compcode)=>{return compcode+`\n${indent}sussy.set(${format(args[0])}, ${format(args[1])})`},
 			4: (args, compcode)=>{return compcode+`\n${indent}sussy.add(${format(args[0])}, ${format(args[1])})`},
 			5: (args, compcode)=>{
-				console.log(args)
 				if (args[0]['type']==='int'){
-					console.log(labels.length)
 					if (args[0]['value']<labels.length){
 						return compcode+`\n${indent}${name}[${format(args[0])}]()`
 					}
@@ -264,4 +262,5 @@ function texttosus(text){
 	}
 	return conv
 }
+eval(sussylang.compile_file('./truthmach.sus').text)
 sussylang.console()
