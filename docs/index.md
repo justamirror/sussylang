@@ -43,8 +43,10 @@ Subtract one from those numbers and you get
 Which happens to be the ascii codes for the string 'hello world'.
 So, to make a string, you could do this:
 ```
-var string = 'hello world'
+var text = 'hello world'
 var code = ''
-while (true) {
-  
+for (var i = 0; i < text.length; i++) {
+		code+="ඞ".repeat(text.charCodeAt(i)+1)+"䷢"
 }
+code+=' '
+```
